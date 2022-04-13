@@ -263,7 +263,6 @@ export default function Header() {
   const scrollY = useScrollPosition()
 
   const {
-    infoLink,
     nativeCurrency: { symbol: nativeCurrencySymbol },
   } = CHAIN_INFO[chainId ? chainId : SupportedChainId.MAINNET]
 
