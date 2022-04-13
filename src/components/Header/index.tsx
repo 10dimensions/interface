@@ -14,7 +14,7 @@ import { useDarkModeManager } from 'state/user/hooks'
 import { useNativeCurrencyBalances } from 'state/wallet/hooks'
 import styled from 'styled-components/macro'
 
-import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
+import { ReactComponent as Logo } from '../../assets/svg/lisk_symbol.svg'
 import { ExternalLink, ThemedText } from '../../theme'
 import ClaimModal from '../claim/ClaimModal'
 import { CardNoise } from '../earn/styled'
@@ -294,11 +294,11 @@ export default function Header() {
           <Trans>Pool</Trans>
         </StyledNavLink>
         {(!chainId || chainId === SupportedChainId.MAINNET) && (
-          <StyledNavLink id={`vote-nav-link`} to={'/vote'}>
+          <StyledNavLink id={`vote-nav-link`} to={'#'}>
             <Trans>Vote</Trans>
           </StyledNavLink>
         )}
-        <StyledExternalLink id={`charts-nav-link`} href={infoLink}>
+        <StyledExternalLink id={`charts-nav-link`} href={'#'}>
           <Trans>Charts</Trans>
           <sup>↗</sup>
         </StyledExternalLink>
